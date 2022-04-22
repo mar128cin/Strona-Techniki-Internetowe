@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl-pl">
+  <head>
+    <title>Rozgrzewka z jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        alert("Strona została poprawnie załadowana");
+      });
+
+    $(document).ready(function(){
+      $("#pierwszy").on('mouseenter', ()=>{
+        $("#pierwszy").css({"font-weight": "bold"});
+      });
+    })
+
+    $(document).ready(function(){
+      $("#drugi").on('mouseenter', ()=>{
+        $("#drugi").css({"color": "blue"});
+      });
+    })
+
+	$(document).ready(function(){
+      $("#TenPrzycisk").on("click", ()=>{
+        $("p").toggle();
+        $("#TenPrzycisk").css({"font-weight": "bold"});
+      });
+    })
+
+    </script>
+    <style>
+      #TenPrzycisk {
+        padding: 1mm 2mm;
+        border-radius: 10%;
+        background: linear-gradient(
+          45deg,
+          rgba(117, 255, 237, 0.8),
+          rgba(232, 117, 255, 0.8)
+        );
+      }
+      #TenPrzycisk:hover {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p id="pierwszy">Tekst, który ma zostać się pogrubiony.</p>
+    </div>
+    <div>
+      <p id="drugi">Tekst, który ma stać się jasnoniebieski.</p>
+    </div>
+    <div>
+      <span id="TenPrzycisk"> Przycisk </span>
+    </div>
+  </body>
+  <script></script>
+</html>

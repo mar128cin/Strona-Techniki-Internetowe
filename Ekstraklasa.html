@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<title>Polksa piłka nożna</title>
+	<meta name="author" content="Marcin Skałka">
+	<meta name="keywords" content="Piłka, Ekstraklasa,Pierwsza liga ">
+	<meta charset="UTF-8">
+	<meta name="description" content="Wiedza o polskiej piłce nożnej, rozgrywkach">
+	<link rel="shortcut icon" href="Images/Ekstraklasa-Logo.png">
+	<link rel="stylesheet" media="screen" href="Styles/styles.css" />
+	<link rel="stylesheet" media="screen" href="Styles/styl__menu_gorne.css" />
+	<link href="Styles/all.css" rel="stylesheet" />
+
+</head>
+
+<body style="margin: 0px">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$(".nav-top a,.side-menu a").on("click", function (event) {
+				if (this.hash !== "") {
+					event.preventDefault();
+					var hash = this.hash;
+					$("html, body").animate(
+						{
+							scrollTop: $(hash).offset().top,
+						},
+						1500,
+						function () {
+							window.location.hash = hash;
+						}
+					);
+				}
+			});
+		});
+		$(window).resize(function () {
+			if ($(window).width() < 600) {
+				$(".side-menu").hide();
+			}
+			else {
+				$(".side-menu").show();
+			}
+		});
+	</script>
+	<header class="menu">
+		<div class="fl">
+			<div class="logo">
+				<p class="full">Polska piłka nożna</p>
+				<img class="medium small" src="https://deltafonts.com/wp-content/uploads/Ekstraklasa-Logo.png"
+					alt="Ekstraklasa" height=40 width=40>
+			</div>
+			<nav class="nav-top">
+				<div class="full">
+					<a href="#sekcja1">Ekstraklasa</a>
+					<a href="#sekcja2">1 Liga</a>
+					<a href="#sekcja3">2 Liga</a>
+					<a href="#sekcja4">Rozgrywki</a>
+				</div>
+				<div class="medium">
+					<a href="#sekcja1">Ekstraklasa</a>
+					<a href="#sekcja2">1 Liga</a>
+					<a href="#sekcja3">2 Liga</a>
+					<a href="#sekcja4">Rozgrywki</a>
+				</div>
+				<div class="small">
+					<a href="#sekcja1"><i class="fa-solid fa-e"></i></a>
+					<a href="#sekcja2"><i class="fa-solid fa-1"></i></a>
+					<a href="#sekcja3"><i class="fa-solid fa-2"></i></a>
+					<a href="#sekcja4"><i class="fa-solid fa-r"></i></a>
+				</div>
+
+
+			</nav>
+		</div>
+	</header>
+	<div class="side-menu-container">
+		<nav class="side-menu">
+			<a href="#sekcja1" class="toSec1">
+				<div><i class="fa-solid fa-e"></i></div>
+			</a>
+			<a href="#sekcja2" class="toSec2">
+				<div><i class="fa-solid fa-1"></i></div>
+			</a>
+			<a href="#sekcja3" class="toSec3">
+				<div><i class="fa-solid fa-2"></i></div>
+			</a>
+			<a href="#sekcja4" class="toSec4">
+				<div><i class="fa-solid fa-r"></i></div>
+			</a>
+		</nav>
+	</div>
+	<div class="landing">
+		<img src="https://cdn.create.vista.com/api/media/small/195676780/stock-photo-traditional-soccer-ball-on-soccer"
+			alt="zdjecia">
+	</div>
+	<div class="container-main container">
+		<div class="container" id="sekcja1">
+
+			<h1>Ekstraklasa</h1>
+			<p>
+				Ekstraklasa: Najwyższa w hierarchii klasa męskich ligowych rozgrywek piłkarskich w Polsce, będąca
+				jednocześnie najwyższym szczeblem centralnym. W skład jej wchodzi 18 zespołów (sezon 2021/2022).
+				W poprdzednich latach system rozgrywek oraz liczba drużyn mogła być różna.
+			</p>
+			<div class="linkimg">
+				<img src="https://deltafonts.com/wp-content/uploads/Ekstraklasa-Logo.png" alt="Ekstraklasa" width="200"
+					height="250">
+				<br /><a href="https://deltafonts.com/wp-content/uploads/Ekstraklasa-Logo.png">link</a>
+			</div>
+			<h2>Początek Ekstraklasy</h2>
+			<p>
+				14.06.2005 - powstanie spółki Ekstraklasa S.A. w wyniku umowy zawartej przez przedstawicieli Polskiego
+				Związku Piłki Nożnej
+				(PZPN) oraz delegatów 16 klubów ówczesnej I ligi sezonu 2005/2006
+			</p>
+			<h3>Sysytem rozgrywek</h3>
+			<p>
+				W obecnym formacie rozgrywki składają się z trzydziestu czterech kolejek spotkań rozgrywanych pomiędzy
+				drużynami systemem kołowym.
+				Każda para drużyn rozgrywa ze sobą dwa mecze – jeden w roli gospodarza, drugi jako goście. Od sezonu
+				2021/22 w lidze występuje 18 zespołów. W przeszłości liczba ta wynosiła od 10 do 16.
+				Drużyna zwycięska za wygrany mecz otrzymuje 3 punkty (do sezonu 1994/95 2 punkty), 1 za remis oraz 0 za
+				porażkę
+			</p>
+		</div>
+		<hr />
+		<div class="container" id="sekcja2">
+			<h1>Pierwsza liga</h1>
+			<div class="linkimg">
+				<img src="https://stalmielec.com/wp-content/uploads/2016/06/logo-1-liga.png" alt="Ekstraklasa"
+					width="200" height="250">
+				<br /><a href="https://stalmielec.com/wp-content/uploads/2016/06/logo-1-liga.png">link</a>
+			</div>
+			<p>
+				I liga polska w piłce nożnej (1 liga, pierwsza liga) – drugi poziom rozgrywek mężczyzn w Polsce.
+				Do sezonu 2007/2008 nazywana II ligą. Zmagania w jej ramach toczą się cyklicznie (co sezon) w systemie
+				mecz i rewanż.
+				Przeznaczone są dla 18 polskich klubów piłkarskich. Dwie pierwsze drużyny I ligi polskiej uzyskują awans
+				do Ekstraklasy, zaś najsłabsze trzy zespoły relegowane są do II ligi.
+				Od początku zarządzana przez Polski Związek Piłki Nożnej
+			</p>
+		</div>
+		<hr />
+		<div class="container" id="sekcja3">
+			<h1>Druga Liga</h1>
+			<b> Zwycięzca Ekstraklasy zostaje mistrzem polski</b>
+			<p>
+				II liga polska 2021/2022 – 74. edycja rozgrywek trzeciego poziomu ligowego piłki nożnej mężczyzn w
+				Polsce, 14. pod nazwą II liga, a 8.
+				po reformie, wprowadzającej na tym szczeblu jedną grupę ogólnokrajową.
+				Zgodnie z regulaminem, w rywalizacji bierze udział 18 drużyn klubowych, grających systemem kołowym.
+				10 marca 2021 sponsorem tytularnym rozgrywek zostały zakłady bukmaherskie eWinner, w związku z czym
+				obowiązuje marketingowa nazwa rozgrywek eWinner II liga.
+				Po zakończeniu sezonu rozegrany zostanie turniej barażowy o miejsce w I lidze w sezonie 2022/2023
+				pomiędzy zespołami,
+				które zajmą w II lidze pozycje 3–6. W półfinałach baraży pary zostaną ułożone według klucza 3–6 i 4–5,
+				zaś w finale zmierzą się zwycięzcy półfinałów[a]. We wszystkich meczach gospodarzami będą drużyny,
+				które zajęły w lidze wyższą pozycję.
+
+
+			</p>
+		</div>
+		<hr />
+		<div class="container" id="sekcja4">
+			<h1>Rozgrywki - wyniki i hierarchia</h1>
+			<p> Więcje informacji można dostać wpisując w wyszukiwarkę poszukiwane hasło. Link do Google: <a
+					href="https://www.google.pl/">Google</a></p>
+			<div class="lists">
+				<p>Hierarchia rozgrywek</p>
+				<p>Aktualne podium (sezon 20/21)</p>
+			</div>
+			<div class="left">
+				<ul>
+					<li>Ekstraklasa</li>
+					<li>1 liga</li>
+					<li>2 liga</li>
+				</ul>
+			</div>
+			<div class="right">
+				<ol>
+					<li>Legia Warszawa</li>
+					<li>Raków Częstochowa</li>
+					<li>Pogoń Szczecin</li>
+				</ol>
+			</div>
+			<div class="center">
+				<table>
+					<tbody>
+						<tr>
+							<th>Sezon</th>
+							<th>Mistrz</th>
+							<th>Najelepszy Strzelec</th>
+						</tr>
+						<tr>
+							<td>2018/2019</td>
+							<td>Piast Gliwice</td>
+							<td>Igor Angulo</td>
+						</tr>
+						<tr>
+							<td>2019/2020</td>
+							<td>Legia Warszawa</td>
+							<td>Christian Gytkjaer</td>
+						</tr>
+						<tr>
+							<td>2020/2021</td>
+							<td>Legia Warszawa</td>
+							<td>Tomas Pekhart</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<hr />
+		<footer>
+			<P>Marcin Skałka,2022 ©</P>
+			źródła:
+			<a href="https://pl.wikipedia.org/wiki/Ekstraklasa_w_pi%C5%82ce_no%C5%BCnej">Wikipedia Ekstraklasa</a>
+			<a href="https://www.flashscore.pl/">flashscore</a>
+			<a href="https://pl.wikipedia.org/wiki/I_liga_polska_w_pi%C5%82ce_no%C5%BCnej">Wikipedia 1 liga </a>
+			<a href="https://pl.wikipedia.org/wiki/II_liga_polska_w_pi%C5%82ce_no%C5%BCnej_(2021/2022)">Wikipedia 2
+				liga </a>
+			<a href="https://fonts.google.com/specimen/Hubballi">Link do czcionki</a>
+			<div id="zegar">a</div>
+			<script>
+				setInterval(myTimer, 1000);
+
+				function myTimer() {
+					var d = new Date();
+					document.getElementById("zegar").innerHTML = d.toLocaleTimeString();
+				}
+			</script>
+		</footer>
+	</div>
+</body>
+
+</html>
